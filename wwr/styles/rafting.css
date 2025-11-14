@@ -5,10 +5,9 @@
 }
 
 :root{
-  --primary-color: #0077b6;   /* ocean blue */
-  --secondary-color: #00b4d8; /* bright aqua */
-  --accent1-color: #90e0ef;   /* light sky blue */
-  --accent2-color: #caf0f8;   /* soft water tint */
+  --primary-color: #005f87;   /* ocean blue */
+  --accent1-color: #48a9c5;   /* light sky blue */
+  --accent2-color: #0077b6;   /* soft water tint */
     --heading-font: "Poppins", "Segoe UI", sans-serif;
     --body-font: "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -52,7 +51,7 @@ nav, p, section, article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -63,7 +62,7 @@ h1 {
     color: #fff;
 }
 
-article {
+.hero article {
     position: absolute;
     top: 100px;
     width: 95%;
