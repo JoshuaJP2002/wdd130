@@ -7,14 +7,14 @@
 :root{
   --primary-color: #0077b6;
   --accent1-color: #000;
-  --accent2-color: #0077b6;
+  --accent2-color: #F2F2F2;
     --heading-font: "Poppins", "Segoe UI", sans-serif;
     --body-font: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 header {
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: #fff;
 }
 
 body {
@@ -70,7 +70,7 @@ nav, p, section, article {
     text-align: center;
     border: 1px solid rgb(0 0 0 / 10%);
     background-color: var(--accent1-color);
-    color: var(--primary-color);
+    color: var(--accent2-color);
     opacity: 0.9;
 }
 
