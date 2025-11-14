@@ -5,9 +5,9 @@
 }
 
 :root{
-  --primary-color: #005f87;   /* ocean blue */
-  --accent1-color: #48a9c5;   /* light sky blue */
-  --accent2-color: #0077b6;   /* soft water tint */
+  --primary-color: #0077b6;
+  --accent1-color: #48a9c5;
+  --accent2-color: #0077b6;
     --heading-font: "Poppins", "Segoe UI", sans-serif;
     --body-font: "Open Sans", "Helvetica Neue", sans-serif;
 }
