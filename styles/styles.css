@@ -11,41 +11,43 @@
     --height: auto;
 }
 
-.box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
-}
-
-
 nav {
-    background-color:darkblue;
-    padding: 10px;
+    background-color:steelblue;
+    padding: 1rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-nav a{
+nav a {
     color: white;
+    padding: 10px;
     display: block;
-    padding: 0.5rem;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 h1 {
-    color: darkblue;
+    color: steelblue;
+    padding: .5rem;
     border-bottom: 2px solid black;
+    
+}
+
+p {
+    margin: 1rem;
+    padding: 10px;
+}
+
+main {
+    max-width: 640px;
 }
 
 main img {
     width: 150px;
     height: var(--height);
-    border: 1px solid black;
+    border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
@@ -53,19 +55,10 @@ main img {
 
 }
 
-p {
-    padding: 0;
-}
-
-main {
-    width: 840px;
-}
-
 
 aside {
     width: 20em;
     text-align: var(--text-align);
-    position: relative;
 }
 
 aside img {
@@ -85,6 +78,14 @@ footer {
     text-align: var(--text-align)
 }
 
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0 0 0 / .1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000; 
+}
+
 .indent {
     padding-left: 2rem;
 }
@@ -98,15 +99,15 @@ header, .grid, footer {
     display: grid;
     align-items: center;
 }
-
-main{
+    
+main {
     grid-column: 2/3;
     margin: 1rem;
 }
-
-aside{
+    
+aside {
     width: 20rem;
     position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column: 1;
+    grid-row: 1;
 }
