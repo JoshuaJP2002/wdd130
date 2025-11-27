@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poll-Form</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
@@ -15,28 +16,42 @@
 
     <main>
         <form>
-            <label for="fullname">Full name:</label>
-            <input type="text" id="fullname" name="fullname" required>
-            <label for="useremail">Email:</label>
-            <input type="email" id="useremail" name="useremail" required>
+
+            <!-- CONTACT FIELDSET -->
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </fieldset>
+
+            <!-- QUESTIONS FIELDSET -->
+            <fieldset>
+                <legend>Questions</legend>
+
+                <label for="browser">What is your favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="Chrome">Chrome</option>
+                    <option value="Edge">Edge</option>
+                    <option value="Brave">Brave</option>
+                    <option value="Opera">Opera</option>
+                    <option value="Firefox">Firefox</option>
+                </select>
+
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+
+                <label for="feedback">List the places you have lived:</label>
+                <textarea name="feedback" id="feedback" rows="4"
+                    placeholder="Santiago Dominican Republic, Medellin Colombia, CDMX Mexico"></textarea>
+
+            </fieldset>
+
+            <button type="submit">Submit Poll</button>
         </form>
-
-        <label for="browser">What is your favorite browser?</label>\
-        <select name="browser" id="browser">
-            <option value="Chrome">Chrome</option>
-            <option value="Edge">Edge</option>
-            <option value="Brave">Brave</option>
-            <option value="Opera">Opera</option>
-            <option value="Firefox">Firefox</option>
-        </select>
-
-        <label>Do you have a household pet? <input type="checkbox" id="pet" name="pet"></label>
-
-        <label for="feedback">List the places you have lived</label>
-        <textarea name="feedback" id="feedback" rows="4"
-            placeholder="Santiago Dominican Republic, Medellin Colombia, CDMX Mexico"></textarea>
-
-        <button type="submit">Submit Poll</button>
     </main>
 
     <footer>&copy;2025 | HTML Form - User Poll Activity | Joshua Jimenez</footer>
