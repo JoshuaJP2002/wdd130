@@ -163,3 +163,149 @@ footer .socialmedia img {
     width: 100%;
     border-radius: 8px;
 }
+
+.organization {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.company-info {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.company-info iframe {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: .8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form fieldset {
+    border: none;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.contact-form label {
+    display: block;
+    margin: .3rem 0;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.contact-form button {
+    background: #ccc;
+    padding: .8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background: #bbb;
+}
+
+.employees {
+    background: #f2f2f2;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    border: 1px solid #ddd;
+}
+
+.employees h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.employee-profiles figure {
+    text-align: center;
+}
+
+.employee-profiles img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+}
+
+.employee-profiles figcaption {
+    margin-top: .5rem;
+    font-size: .95rem;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+    .employee-profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .company-info iframe {
+        height: 250px;
+    }
+}
